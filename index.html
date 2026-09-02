@@ -1,17 +1,548 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Alexander Klinger - IT Portfolio</title>
+
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alexander Klinger | IT Professional</title>
+
+<meta name="description" content="Alexander Klinger - IT Professional with 10 years of experience in systems administration, networking, infrastructure, Microsoft technologies, and cybersecurity.">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #1f2937;
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(135deg, #111827, #1e3a5f);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.25rem;
+        color: #dbeafe;
+        margin-bottom: 25px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .button-primary {
+        background: #2563eb;
+        color: white;
+    }
+
+    .button-primary:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+    .button-secondary {
+        background: white;
+        color: #1e3a5f;
+    }
+
+    .button-secondary:hover {
+        background: #e5e7eb;
+        transform: translateY(-2px);
+    }
+
+    nav {
+        background: #0f172a;
+        padding: 15px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #60a5fa;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 60px 20px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: #1e3a5f;
+        margin-bottom: 25px;
+        border-bottom: 3px solid #2563eb;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    .about {
+        background: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+
+    .about p {
+        font-size: 1.05rem;
+        margin-bottom: 15px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .skill-card {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        border-left: 5px solid #2563eb;
+    }
+
+    .skill-card h3 {
+        color: #1e3a5f;
+        margin-bottom: 10px;
+    }
+
+    .skill-card ul {
+        padding-left: 20px;
+    }
+
+    .experience {
+        background: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+
+    .experience h3 {
+        color: #1e3a5f;
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+    }
+
+    .experience .date {
+        color: #6b7280;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .experience ul {
+        padding-left: 22px;
+    }
+
+    .certification {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        text-align: center;
+    }
+
+    .certification h3 {
+        color: #1e3a5f;
+        font-size: 1.5rem;
+    }
+
+    .certification p {
+        margin-top: 10px;
+    }
+
+    .portfolio {
+        background: #eaf2ff;
+        padding: 50px 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .portfolio p {
+        max-width: 700px;
+        margin: 0 auto 25px;
+    }
+
+    footer {
+        background: #0f172a;
+        color: #cbd5e1;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 40px;
+    }
+
+    footer strong {
+        color: white;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 2.2rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        nav a {
+            margin: 0 7px;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            padding: 40px 15px;
+        }
+
+        .about,
+        .experience {
+            padding: 25px;
+        }
+    }
+</style>
+
 </head>
+
 <body>
 
-    <h1>Alexander Klinger</h1>
+<header> <h1>Alexander Klinger</h1>
 
-    <h2>IT Systems Administrator | Infrastructure | Cybersecurity</h2>
+<p>
+    IT Professional | Systems Administration | Networking | Cybersecurity
+</p>
 
-    <p>10+ Years of IT Experience | CompTIA Security+</p>
+<p>
+    10 Years of Information Technology Experience
+</p>
 
-    <p>Welcome to my IT portfolio.</p>
+<div class="buttons">
+    <a href="Portfolio.pdf" class="button button-primary" target="_blank">
+        View My Portfolio
+    </a>
 
-</body>
-</html>
+    <a href="#contact" class="button button-secondary">
+        Contact Me
+    </a>
+</div>
+
+</header>
+
+<nav> <a href="#about">About</a> <a href="#skills">Skills</a> <a href="#experience">Experience</a> <a href="#certifications">Certifications</a> <a href="#portfolio">Portfolio</a> <a href="#contact">Contact</a> </nav>
+
+<main>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am an IT professional with 10 years of hands-on experience
+                supporting and managing technology environments across a variety
+                of organizations.
+            </p>
+
+            <p>
+                Throughout my career, I have worked with law offices, healthcare
+                organizations, municipal offices, housing authorities, and other
+                business environments. My experience includes desktop and server
+                administration, network infrastructure, Active Directory,
+                Microsoft technologies, cybersecurity, backups, and end-user
+                support.
+            </p>
+
+            <p>
+                I specialize in troubleshooting complex technical issues,
+                maintaining reliable IT infrastructure, supporting users, and
+                implementing practical technology solutions that improve
+                security, reliability, and productivity.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Systems Administration</h3>
+                <ul>
+                    <li>Windows Server</li>
+                    <li>Active Directory</li>
+                    <li>Group Policy</li>
+                    <li>Hyper-V</li>
+                    <li>RDP</li>
+                    <li>Server Maintenance</li>
+                    <li>System Configuration</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Networking</h3>
+                <ul>
+                    <li>LAN/WAN Infrastructure</li>
+                    <li>TCP/IP</li>
+                    <li>DHCP & DNS</li>
+                    <li>Wireless Networks</li>
+                    <li>Network Troubleshooting</li>
+                    <li>Network Installation</li>
+                    <li>VoIP Systems</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Microsoft Technologies</h3>
+                <ul>
+                    <li>Microsoft 365</li>
+                    <li>Microsoft Entra ID</li>
+                    <li>Azure AD</li>
+                    <li>Windows 10/11</li>
+                    <li>PowerShell</li>
+                    <li>Microsoft Exchange</li>
+                    <li>Office 365 Administration</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Cybersecurity</h3>
+                <ul>
+                    <li>CompTIA Security+</li>
+                    <li>Endpoint Security</li>
+                    <li>EDR</li>
+                    <li>Security Monitoring</li>
+                    <li>Access Control</li>
+                    <li>Data Protection</li>
+                    <li>Security Best Practices</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Desktop & Help Desk</h3>
+                <ul>
+                    <li>Windows Desktop Support</li>
+                    <li>Hardware Troubleshooting</li>
+                    <li>Software Troubleshooting</li>
+                    <li>PC Deployment</li>
+                    <li>User Support</li>
+                    <li>Remote Support</li>
+                    <li>IMAC Support</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Infrastructure</h3>
+                <ul>
+                    <li>Backup Systems</li>
+                    <li>Server Deployment</li>
+                    <li>Virtualization</li>
+                    <li>Network Infrastructure</li>
+                    <li>VOIP Deployment</li>
+                    <li>IT Documentation</li>
+                    <li>Infrastructure Maintenance</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="experience">
+
+            <h3>Information Technology Professional</h3>
+
+            <div class="date">
+                IT Data Consultants / Harris Micrographics
+            </div>
+
+            <div class="date">
+                10 Years of IT Experience
+            </div>
+
+            <ul>
+                <li>
+                    Supported and maintained Windows desktop and server
+                    environments across multiple organizations.
+                </li>
+
+                <li>
+                    Administered Active Directory environments including
+                    users, computers, permissions, and domain services.
+                </li>
+
+                <li>
+                    Built, configured, maintained, and troubleshot computer
+                    systems and servers.
+                </li>
+
+                <li>
+                    Installed and supported network infrastructure including
+                    wired and wireless networking.
+                </li>
+
+                <li>
+                    Supported Microsoft 365 and Microsoft Entra ID environments.
+                </li>
+
+                <li>
+                    Provided technical support for end users and business-critical
+                    applications.
+                </li>
+
+                <li>
+                    Supported and administered Search Express document
+                    management environments.
+                </li>
+
+                <li>
+                    Configured and supported VoIP phone systems.
+                </li>
+
+                <li>
+                    Managed backup systems and assisted with data protection
+                    and recovery procedures.
+                </li>
+
+                <li>
+                    Performed troubleshooting, system maintenance, hardware
+                    replacement, software deployment, and user support.
+                </li>
+
+                <li>
+                    Applied cybersecurity best practices to protect systems,
+                    users, and organizational data.
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+
+        <div class="certification">
+
+            <h3>CompTIA Security+</h3>
+
+            <p>
+                CompTIA Security+ certified IT professional with a strong
+                foundation in cybersecurity principles, network security,
+                access control, risk management, incident response, and
+                security operations.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+
+        <div class="portfolio">
+
+            <h3>Professional Portfolio & Resume</h3>
+
+            <p>
+                View my complete professional portfolio, including my resume,
+                technical experience, IT background, certifications, and
+                career information.
+            </p>
+
+            <a href="Portfolio.pdf" class="button button-primary" target="_blank">
+                Open Portfolio PDF
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="about">
+
+            <p>
+                I am currently pursuing opportunities in IT, systems
+                administration, infrastructure, networking, and cybersecurity.
+            </p>
+
+            <p>
+                <strong>Location:</strong> Relocating to Florida in October 2026
+            </p>
+
+            <p>
+                <strong>Experience:</strong> 10 Years in Information Technology
+            </p>
+
+            <p>
+                <strong>Certification:</strong> CompTIA Security+
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>
+    © 2026 <strong>Alexander Klinger</strong> | IT Professional
+</p>
+
+<p>
+    Systems Administration • Networking • Infrastructure • Cybersecurity
+</p>
+
+</footer>
+
+</body> </html>
